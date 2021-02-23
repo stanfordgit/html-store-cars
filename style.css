@@ -1,0 +1,663 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background : gainsboro;
+}
+
+.navbar .navbar-toggler {
+  color     : black;
+  border    : none;
+  outline   : none;
+  box-shadow: none;
+}
+
+.navbar .label-menu {
+  color         : black;
+  font-size     : 14px;
+  font-weight   : 500;
+  vertical-align: middle;
+}
+
+.navbar .navbar-toggler .fa {
+  vertical-align: middle;
+  color         : black;
+}
+
+.navbar .collapse .form-control,
+.navbar .collapse .btn-search {
+  border    : none;
+  outline   : none;
+  box-shadow: none;
+}
+
+.navbar .collapse .form-control {
+  text-align: center;
+
+}
+
+/*Header*/
+header a {
+  font-weight    : 600;
+  font-size      : 13px;
+  border-radius  : 12px;
+  background-size: 50% 2px;
+}
+
+header a:hover:not(.navbar-brand) {
+  padding-top    : 7px;
+  border         : none;
+  border-bottom  : 1px solid black;
+  border-radius  : 0;
+  width          : 90%;
+  display        : inline-flex;
+  justify-content: center;
+}
+
+/*Main*/
+.jumbotron {
+  height: 600px;
+  color : #fff;
+}
+
+.jumbotron hr {
+  border          : none;
+  background-color: #fff;
+  color           : #fff;
+  height          : 2px;
+  transition      : 0.5s;
+}
+
+.jumbotron h1 {
+  font-weight: lighter;
+  transition : 0.5s;
+}
+
+.jumbotron h2 {
+  font-weight: 400;
+  transition : 0.5s;
+}
+
+@media (min-width: 961px) {
+  .jumbotron {
+    background: url("Images/background-big.jpg") center 0% / cover no-repeat;
+  }
+
+  .jumbotron h1 {
+    font-size: 60px;
+  }
+
+  .jumbotron h2 {
+    font-size: 22px;
+  }
+
+  .jumbotron hr {
+    width: 400px;
+  }
+
+  .jumbotron .title-card {
+    margin-top: -50px;
+  }
+
+  .carousel {
+    margin: 0 12% 24px 12%;
+  }
+
+  #build:before {
+    content: "СОЗДАТЬ СВОЙ LEXUS";
+  }
+
+  #dealer::before {
+    content: "НАЙТИ ДИЛЕРОВ";
+  }
+
+  .footer {
+    display        : flex;
+    justify-content: center;
+  }
+
+  .footer-wrapper:last-child {
+    padding-left: 15%;
+  }
+
+  .contact-main {
+    display       : flex;
+    flex-direction: row;
+  }
+
+  .contact-main .main-text {
+    width       : 60%;
+    margin-right: 8px;
+  }
+
+  .contact-main .row-horizontal {
+    border-right: 1px solid black;
+    height      : auto;
+  }
+
+  .contact-main .other-text {
+    width      : 40%;
+    margin-left: 8px;
+  }
+
+  .about-main {
+    display       : flex;
+    flex-direction: row;
+  }
+
+  .about-main .main-text {
+    width       : 60%;
+    margin-right: 8px;
+  }
+
+  .about-main .row-horizontal {
+    border-right: 1px solid black;
+    height      : auto;
+  }
+
+  .about-main .other-text {
+    width      : 40%;
+    margin-left: 8px;
+  }
+}
+
+@media (max-width: 961px) {
+  .jumbotron {
+    background: url("Images/background-small.jpg") center 0% / cover no-repeat;
+  }
+
+  .jumbotron h1 {
+    font-size: 45px;
+  }
+
+  .jumbotron h2 {
+    font-size: 17px;
+  }
+
+  .jumbotron hr {
+    width: 300px;
+  }
+
+  .jumbotron .title-card {
+    margin-top: -20px;
+  }
+
+  .carousel {
+    margin: 0 3% 24px 3%;
+  }
+
+  #build:before {
+    content: "СОЗДАТЬ";
+  }
+
+  #dealer:before {
+    content: "ДИЛЕРЫ";
+  }
+
+  .footer {
+    display        : flex;
+    justify-content: left;
+  }
+
+  .contact-main {
+    display       : flex;
+    flex-direction: column;
+  }
+
+  .contact-main .main-text {
+    width        : 100%;
+    margin-bottom: 8px;
+  }
+
+  .contact-main .row-horizontal {
+    border-top: 1px solid black;
+  }
+
+  .contact-main .other-text {
+    width     : 100%;
+    margin-top: 8px;
+  }
+
+  .about-main {
+    display       : flex;
+    flex-direction: column;
+  }
+
+  .about-main .main-text {
+    width        : 100%;
+    margin-bottom: 8px;
+  }
+
+  .about-main .row-horizontal {
+    border-top: 1px solid black;
+  }
+
+  .about-main .other-text {
+    width     : 100%;
+    margin-top: 8px;
+  }
+}
+
+/*Setting shopping tools*/
+#shoppingtools {
+  font-size    : 26px;
+  font-weight  : 400;
+  margin-bottom: 24px;
+  padding      : 0;
+}
+
+#shoppingtools ul {
+  list-style-type: none;
+  margin-bottom  : 32px;
+  padding        : 0;
+}
+
+#shoppingtools a {
+  font-size      : 12px;
+  font-weight    : bold;
+  text-decoration: none;
+  color          : black;
+}
+
+#shoppingtools a:hover {
+  text-decoration: underline;
+}
+
+#shoppingtools ul {
+  display        : flex;
+  justify-content: center;
+}
+
+#shoppingtools li {
+  display    : flex;
+  align-items: flex-end;
+  padding    : 0 15px;
+}
+
+#shoppingtools div {
+  display        : flex;
+  padding-bottom : 8px;
+  justify-content: center;
+}
+
+#shoppingtools span {
+  display        : flex;
+  justify-content: center;
+}
+
+/*Setting gallery*/
+#gallery {
+  font-size    : 26px;
+  font-weight  : 400;
+  margin-top   : 32px;
+  margin-bottom: 24px;
+}
+
+/*Setting carousel*/
+
+.carousel-item {
+  height         : 100%;
+  width          : 100%;
+  display        : inline-flex;
+  justify-content: center;
+  align-items    : center;
+}
+
+.carousel-item img {
+  height    : 700px;
+  width     : 100%;
+  object-fit: cover;
+}
+
+.carousel-inner {
+  border-radius: 30px;
+}
+
+/*Footer*/
+/*Disclaimer*/
+footer .footer-disclaimer {
+  padding  : 40px;
+  font-size: 11px;
+}
+
+footer a {
+  color     : white;
+  transition: 0.5s;
+}
+
+footer a:hover {
+  color          : darkgray;
+  text-decoration: none;
+}
+
+footer p {
+  color: darkgray;
+}
+
+/*Main footer*/
+.footer {
+  padding  : 40px;
+  flex-wrap: wrap;
+}
+
+.footer-wrapper ul {
+  list-style-type: none;
+}
+
+.footer-wrapper h5 {
+  padding-left: 40px;
+  color       : white;
+}
+
+/*Footer Models*/
+.model-link {
+  padding-left: 40px;
+}
+
+.model-link a {
+  font-weight    : 400;
+  text-transform : uppercase;
+  font-size      : 13px;
+  text-decoration: none;
+}
+
+.model-link li {
+  padding-top: 5px;
+}
+
+.models .model-link {
+  padding-left: 10px;
+}
+
+.models .model-link:first-child {
+  padding-left: 40px;
+}
+
+.footer-wrapper .models {
+  display: flex;
+}
+
+/*Footer Social*/
+.high-level-links {
+  padding-left: 40px;
+}
+
+.high-level-links a {
+  font-weight    : 400;
+  text-transform : uppercase;
+  font-size      : 13px;
+  text-decoration: none;
+}
+
+.high-level-links li {
+  padding-top: 5px;
+}
+
+.social-contact {
+  padding: 0;
+}
+
+.social-contact li {
+  padding-left: 10px;
+}
+
+.social-contact li:first-child {
+  padding-left: 40px;
+}
+
+/*Cars list*/
+.card-deck {
+  margin: 32px;
+}
+
+.card-deck img {
+  height     : auto;
+  width      : 90%;
+  object-fit : cover;
+  margin-left: 10%;
+}
+
+.card-body .card-title {
+  margin: 0;
+}
+
+.col-md-4 .card-body {
+  padding: 0 0 0 16px;
+}
+
+.col-md-4 .card-body small div:first-child {
+  font-weight: 500;
+}
+
+.col-md-4 .card-body small {
+  font-weight: 400;
+}
+
+.row .col-md-4 {
+  padding: 0;
+}
+
+.btn-group {
+  margin-bottom: 10px;
+}
+
+.btn-group a {
+  opacity  : 0;
+  color    : black;
+  font-size: 13px;
+}
+
+.btn-group a:not(.streak) {
+  font-weight: bold;
+}
+
+.streak {
+  font-weight: lighter;
+  padding    : 0 5px 0 5px;
+}
+
+.col-md-4:hover .btn-group a {
+  opacity   : 1;
+  transition: all 0.3s;
+  color     : black;
+}
+
+.col-md-4:not(:hover) .btn-group a {
+  transition: all 0.3s;
+}
+
+.linkcard {
+  color: black;
+}
+
+.linkcard:hover {
+  color          : black;
+  text-decoration: none;
+}
+
+.card:hover {
+  background: whitesmoke;
+}
+
+#futurecar .btn-group,
+#performancecar .btn-group {
+  opacity: 0;
+}
+
+#performancecar img {
+  margin-left: 5%;
+}
+
+#performancebody {
+  height: 94px;
+}
+
+/*Upper*/
+.scroll-top-button a {
+  display        : flex;
+  position       : fixed;
+  align-items    : center;
+  justify-content: center;
+  left           : 15px;
+  bottom         : 50px;
+  width          : 50px;
+  height         : 50px;
+  color          : white;
+  background     : #343a40;
+  border         : 2px solid gray;
+  border-radius  : 50%;
+  font-size      : 12px;
+  font-weight    : 500;
+  text-transform : uppercase;
+  z-index        : 97;
+  cursor         : pointer;
+  transition     : 0.3s;
+}
+
+.scroll-top-button a:hover {
+  color          : white;
+  background     : #212529;
+  text-decoration: none;
+}
+
+/*Page*/
+.page-title {
+  padding    : 35px 0;
+  font-size  : 22px;
+  font-weight: 400;
+  border-top : 1px solid black;
+  text-align : center;
+}
+
+.page-title small {
+  font-weight: 300;
+  font-size  : 16px;
+}
+
+/*Contact*/
+.form-group-main {
+  width        : 100%;
+  outline      : none;
+  border-bottom: 1px solid black;
+  background   : transparent;
+  margin-bottom: 16px;
+}
+
+.contact-main .priority {
+  color: crimson;
+}
+
+.form-group label,
+.form-group-main label,
+.form-disclaimer label {
+  margin: 0;
+}
+
+.form-group-main #exampleFormControlInput1,
+.form-group-main #exampleFormControlSelect1 {
+  border    : none;
+  outline   : none;
+  box-shadow: none;
+  padding   : 0 12px;
+}
+
+.form-group-main select {
+  width        : 100%;
+  outline      : none;
+  padding      : 6px;
+  border       : 1.5px solid none;
+  border-bottom: 1.5px solid gray;
+}
+
+#exampleFormControlSelect1 {
+  font-weight: 400;
+}
+
+#exampleFormControlTextarea1 {
+  padding    : 12px 20px;
+  margin     : 8px 0 16px 0;
+  border     : 1px solid lightgray;
+  font-weight: 400;
+  box-shadow : none;
+}
+
+.contact-img {
+  width     : 100%;
+  height    : 100%;
+  object-fit: cover;
+}
+
+.contact-main {
+  max-width  : 90%;
+  margin     : auto;
+  padding    : 32px 16px 32px;
+  box-shadow : 0 0 2px rgba(0, 0, 0, 0.5);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.contact-main .main-text,
+.contact-main .other-text {
+  padding: 16px;
+}
+
+.contact-main .other-text h5,
+.contact-main #submitbtn {
+  font-weight: 300;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.contact-feedback {
+  padding      : 16px;
+  border-radius: 10px;
+  box-shadow   : 0 0 2px rgba(0, 0, 0, 0.5);
+  font-family  : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.contact-feedback label:not(.custom-control-label) {
+  font-weight: 500;
+}
+
+.contact-feedback #submitbtn {
+  padding-top: 16px;
+}
+
+input {
+  outline: none;
+}
+
+.contact-feedback input:active {
+  background: transparent;
+}
+
+iframe {
+  width        : 100%;
+  height       : 300px;
+  border       : 1px solid lightgray;
+  border-radius: 10px;
+  box-shadow   : 0 0 2px rgba(0, 0, 0, 0.5);
+  margin-top   : 16px;
+}
+
+/*About*/
+.about-img {
+  width     : 100%;
+  height    : 100%;
+  object-fit: cover;
+}
+
+.about-main {
+  max-width  : 90%;
+  margin     : auto;
+  padding    : 32px 16px 32px;
+  box-shadow : 0 0 2px rgba(0, 0, 0, 0.5);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about-main .main-text,
+.about-main .other-text {
+  padding: 16px;
+}
+
+.about-main .other-text h5,
+.about-main .btn {
+  font-weight: 300;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
